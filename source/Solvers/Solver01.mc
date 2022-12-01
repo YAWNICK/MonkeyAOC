@@ -16,6 +16,7 @@ class Solver01 {
     var m1;
     var m2;
     var m3;
+    var i;
 
     function initialize(app, input) {
         me.app = app;
@@ -27,6 +28,7 @@ class Solver01 {
         me.m1 = 0;
         me.m2 = 0;
         me.m3 = 0;
+        me.i = 0;
         me.part = part;
         me.cent = me.input.length();
         me.app.onProgress("0.00");
@@ -43,16 +45,16 @@ class Solver01 {
 
     function iterate() {
         var ns = me.input;
-        var l = ns.length();
-        System.println(l);
         var iSpace;
-        var iSpaceSpace;
+        var searchstr;
+        var nstr;
         var curr = 0;
         var n;
         var finished = false;
         var wdcnt = 0;
-        while (wdcnt < 300) {
-            iSpace = ns.find("\n");
+        while (wdcnt < 50) {
+            searchstr = ns.substring(me.i, me.i+10);
+            iSpace = searchstr.find("\n");
             if (iSpace == null) {
                 finished = true;
                 break;
@@ -60,14 +62,13 @@ class Solver01 {
             if (iSpace == 0) {
                 insertMax(curr);
                 curr = 0;
-                ns = ns.substring(iSpace + 1, l);
                 wdcnt += 1;
-                continue;
+            } else {
+                nstr = searchstr.substring(0, iSpace);
+                n = nstr.toNumber();
+                curr += n;
             }
-            n = ns.substring(0, iSpace).toNumber();
-            curr += n;
-            ns = ns.substring(iSpace + 1, l);
-            wdcnt += 1;
+            me.i = me.i + iSpace + 1;
         }
         if (finished) {
             if (me.part == 1) {
@@ -78,8 +79,7 @@ class Solver01 {
             app.onResult();
             return;
         }
-        me.input = ns;
-        me.percent = (1.0 - (l.toFloat() / me.cent)) * 100;
+        me.percent = me.i.toFloat() / me.cent * 100;
         me.timer.start(method(:reportProgress), 50, false);
 
     }

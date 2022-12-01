@@ -1,0 +1,4 @@
+<menu id="DayMenu">
+    <menu-item id="day_1" label="@Strings.menu_day_1" />
+    <menu-item id="day_2" label="@Strings.menu_day_2" />
+</menu>

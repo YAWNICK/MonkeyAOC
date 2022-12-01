@@ -1,0 +1,4 @@
+<menu id="PartMenu">
+    <menu-item id="part_1" label="@Strings.menu_part_1"/>
+    <menu-item id="part_2" label="@Strings.menu_part_2"/>
+</menu>

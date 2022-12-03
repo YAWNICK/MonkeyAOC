@@ -5,7 +5,7 @@ I've set myself the challenge of solving some 2022 [Advent of Code](https://adve
 ## Goals
 - [x] Solve day 1 part 1
 - [x] Solve day 1 (both parts)
-- [ ] Solve more than one day
+- [x] Solve more than one day
 - [ ] Solve all days (Seems fairly impossible)
 
 ## Dev Setup

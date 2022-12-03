@@ -21,3 +21,7 @@ To download the input you need an access token. [Here](https://github.com/wimgle
     <string id="Token">asdfasdf12341234</string>
 </strings>
 ```
+
+## Learnings to keep in mind
+- `substring`: if the endindex is greater than the length of the string if behaves as if endindex would bave been the length of the string.
+- Strings of length 1 and Chars are not the same. The distinction is `'` for chars and `"` for strings.

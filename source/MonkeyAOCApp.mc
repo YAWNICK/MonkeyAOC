@@ -50,6 +50,10 @@ class MonkeyAOCApp extends Application.AppBase {
                 break;
             case 3:
                 me.solver = new Solver03(me, data);
+                break;
+            case 4:
+                me.solver = new Solver04(me, data);
+                break;
             default:
                 break;
         }

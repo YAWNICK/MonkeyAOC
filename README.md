@@ -8,6 +8,14 @@ I've set myself the challenge of solving some 2022 [Advent of Code](https://adve
 - [x] Solve more than one day
 - [ ] Solve all days (Seems fairly impossible)
 
+## Solved Days
+```
+Day     1234
+------------
+Part 1: ****
+Part 2: ****
+```
+
 ## Dev Setup
 
 To anyone who wants to contribute or use this as a template:

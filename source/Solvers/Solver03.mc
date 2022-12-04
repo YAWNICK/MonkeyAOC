@@ -4,14 +4,7 @@ import Toybox.System;
 import Toybox.WatchUi;
 
 
-class Solver03 {
-
-    var app;
-    var input;
-    var timer;
-    var part;
-    var cent;
-    var percent;
+class Solver03 extends Solver {
 
     var s1;
     var s2;
@@ -20,9 +13,7 @@ class Solver03 {
     var lcnt;
 
     function initialize(app, input) {
-        me.app = app;
-        me.input = input;
-        me.timer = new Timer.Timer();
+        Solver.initialize(app, input);
     }
 
     function solve(part) {
@@ -44,10 +35,6 @@ class Solver03 {
         } else {
             me.iterate2();
         }
-    }
-
-    function reportProgress() {
-        me.app.onProgress(me.percent.format("%.2f"));
     }
 
     function iterate1() {

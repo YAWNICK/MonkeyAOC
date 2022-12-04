@@ -6,22 +6,13 @@ import Toybox.WatchUi;
 
 class Solver01 {
 
-    var app;
-    var input;
-    var timer;
-    var part;
-    var cent;
-    var percent;
-
     var m1;
     var m2;
     var m3;
     var i;
 
     function initialize(app, input) {
-        me.app = app;
-        me.input = input;
-        me.timer = new Timer.Timer();
+        Solver.initialize(app, input);
     }
 
     function solve(part) {
@@ -37,10 +28,6 @@ class Solver01 {
 
     function continueSolving() {
         iterate();
-    }
-
-    function reportProgress() {
-        me.app.onProgress(me.percent.format("%.2f"));
     }
 
     function iterate() {

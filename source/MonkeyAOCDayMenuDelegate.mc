@@ -29,6 +29,9 @@ class MonkeyAOCDayMenuDelegate extends WatchUi.MenuInputDelegate {
         } else if (item == :day_5) {
             System.println("day 5");
             me.app.day = 5;
+        } else if (item == :day_6) {
+            System.println("day 6");
+            me.app.day = 6;
         }
         WatchUi.pushView(new Rez.Menus.PartMenu(), new MonkeyAOCPartMenuDelegate(me.app, dayMenu), WatchUi.SLIDE_LEFT);
     }

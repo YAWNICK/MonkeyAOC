@@ -24,7 +24,7 @@ class Solver03 extends Solver {
         me.lcnt = 1;
         me.part = part;
         me.cent = me.input.length();
-        me.app.onProgress("0.00");
+        me.app.initiateProgress();
         continueSolving();
         
     }

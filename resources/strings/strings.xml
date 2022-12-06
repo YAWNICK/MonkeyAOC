@@ -1,12 +1,11 @@
 <strings>
     <string id="AppName">AOC</string>
 
-    <string id="prompt">Click the menu button</string>
-
     <string id="menu_day_1">Day 1</string>
     <string id="menu_day_2">Day 2</string>
     <string id="menu_day_3">Day 3</string>
     <string id="menu_day_4">Day 4</string>
+    <string id="menu_day_5">Day 5</string>
     <string id="menu_part_1">Part 1</string>
     <string id="menu_part_2">Part 2</string>
 </strings>

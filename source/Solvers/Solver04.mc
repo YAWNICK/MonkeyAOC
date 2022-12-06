@@ -20,7 +20,7 @@ class Solver04 extends Solver {
         me.i = 0;
         me.part = part;
         me.cent = me.input.length();
-        me.app.onProgress("0.00");
+        me.app.initiateProgress();
         me.iterate();
     }
 

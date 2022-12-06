@@ -33,3 +33,4 @@ To download the input you need an access token. [Here](https://github.com/wimgle
 ## Learnings to keep in mind
 - `substring`: if the endindex is greater than the length of the string if behaves as if endindex would bave been the length of the string.
 - Strings of length 1 and Chars are not the same. The distinction is `'` for chars and `"` for strings.
+- It's not possible to use negative indices with arrays (like array[-1]), however this can be used with array.slice() from CIQ version 1.3

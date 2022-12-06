@@ -21,8 +21,13 @@ class MonkeyAOCApp extends Application.AppBase {
         me.solver.solve(me.part);
     }
 
-    function onProgress(progress) {
+    function initiateProgress() {
         me.state = 2;
+        me.msg = "0.00 %";
+        WatchUi.requestUpdate();
+    }
+
+    function onProgress(progress) {
         me.msg = progress + " %";
         WatchUi.requestUpdate();
         me.solver.continueSolving();
@@ -53,6 +58,9 @@ class MonkeyAOCApp extends Application.AppBase {
                 break;
             case 4:
                 me.solver = new Solver04(me, data);
+                break;
+            case 5:
+                me.solver = new Solver05(me, data);
                 break;
             default:
                 break;

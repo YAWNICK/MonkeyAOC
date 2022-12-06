@@ -10,10 +10,10 @@ I've set myself the challenge of solving some 2022 [Advent of Code](https://adve
 
 ## Solved Days
 ```
-Day     1234
-------------
-Part 1: ****
-Part 2: ****
+Day     123456
+--------------
+Part 1: ******
+Part 2: ******
 ```
 
 ## Dev Setup

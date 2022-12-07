@@ -46,11 +46,8 @@ class Solver07 extends Solver {
             me.i += iSpace + 1;
             wdcnt += 1;
             line = searchstr.substring(0, iSpace);
-            // for some reason the .equals() stuff doesn't work...
-            if (line.substring(0, 1).toCharArray()[0].toNumber() != 36) {  // 36 is $
-            //if (line.substring(0,1).equals("$")) {
-                if (line.substring(0, 1).toCharArray()[0].toNumber() == 100) {continue;}  // 100 is d
-                //if (line.substring(0,1).equals("d")) {continue;}
+            if (!line.substring(0,1).equals("$")) {
+                if (line.substring(0,1).equals("d")) {continue;}
                 fsize = line.substring(0, line.find(" ")).toNumber();
                 var dpath = "";
                 for (var i = 0; i < me.Stack.size(); i++) {

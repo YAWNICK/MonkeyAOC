@@ -36,4 +36,4 @@ To download the input you need an access token. [Here](https://github.com/wimgle
 - It's not possible to use negative indices with arrays (like array[-1]), however this can be used with array.slice() from CIQ version 1.3 (but not with String.substring())
 - String.toCharArray() makes it about 5x larger in memory
 - Booleans seem to be completely separated from all other types. Nothing can be casted to a bool.
-- With Strings always use hashCode and equals, but on day 7 I've had some problems with equals.
+- With Strings always use hashCode and equals

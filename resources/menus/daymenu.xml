@@ -5,4 +5,5 @@
     <menu-item id="day_4" label="@Strings.menu_day_4" />
     <menu-item id="day_5" label="@Strings.menu_day_5" />
     <menu-item id="day_6" label="@Strings.menu_day_6" />
+    <menu-item id="day_7" label="@Strings.menu_day_7" />
 </menu>

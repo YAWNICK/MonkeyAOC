@@ -2,6 +2,8 @@
 
 I've set myself the challenge of solving some 2022 [Advent of Code](https://adventofcode.com/) problems on my Garmin Forerunner 235 with an App written in Monkey C. These are my results.
 
+Check out the [Youtube Playlist](https://www.youtube.com/playlist?list=PLTB69k7-3oNiRPEnS2kTslHSe-PZ3ixTg) to see the watch in action.
+
 ## Goals
 - [x] Solve day 1 part 1
 - [x] Solve day 1 (both parts)
